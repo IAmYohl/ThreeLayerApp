@@ -26,7 +26,7 @@ namespace BusinessLogicLayer
         public async Task AddEmployeeAsync(Employee newEmployee)
         {
             //example logic: no employees with sal higher than 250k
-            if (newEmployee != null && newEmployee.Salary <= 500_000)
+            if (newEmployee != null && newEmployee.Salary <= 250_000)
             {
                 await _employeeRepository.AddEmployeeAsync(newEmployee);
             }
@@ -39,7 +39,7 @@ namespace BusinessLogicLayer
         public async Task EditEmployeeAsync(Employee newEmployee)
         {
             //example logic: no employees with sal higher than 250k
-            if (newEmployee != null && newEmployee.Salary <= 500_000)
+            if (newEmployee != null && newEmployee.Salary <= 250_000)
             {
                 await _employeeRepository.EditEmployeeAsync(newEmployee);
             }
