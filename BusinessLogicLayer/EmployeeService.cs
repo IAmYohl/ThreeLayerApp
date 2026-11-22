@@ -6,6 +6,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// TODO: Log when salary validation fails
+
 namespace BusinessLogicLayer
 {
     public class EmployeeService : IEmployeeService
